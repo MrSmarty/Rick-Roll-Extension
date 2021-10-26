@@ -1,0 +1,17 @@
+{
+    "name": "Automatic Rick Roll",
+    "description": "Install this on your friends computer to automatically replaces all links in a page to Never Gonna Give You Up by Rick Astley.",
+    "version": "1.0",
+    "author": "Lincoln Smith",
+    "icons": {
+      "128": "128.png"
+    }, 
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches" : ["<all_urls>"],
+          "js": ["jquery-2.2.0.min.js", "rr.js"],
+          "run_at": "document_end"
+        }
+      ]
+}
